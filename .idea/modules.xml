@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/00_HelloJava_vitali/00_HelloJava_vitali.iml" filepath="$PROJECT_DIR$/00_HelloJava_vitali/00_HelloJava_vitali.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01_Klassen_v/01_Klassen_v.iml" filepath="$PROJECT_DIR$/01_Klassen_v/01_Klassen_v.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_Konstruktoren_v/02_Konstruktoren_v.iml" filepath="$PROJECT_DIR$/02_Konstruktoren_v/02_Konstruktoren_v.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Static_v/03_Static_v.iml" filepath="$PROJECT_DIR$/03_Static_v/03_Static_v.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_SwitchCase/04_SwitchCase.iml" filepath="$PROJECT_DIR$/04_SwitchCase/04_SwitchCase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_Konsoleneingabe/05_Konsoleneingabe.iml" filepath="$PROJECT_DIR$/05_Konsoleneingabe/05_Konsoleneingabe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_Arrays/06_Arrays.iml" filepath="$PROJECT_DIR$/06_Arrays/06_Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_Vererbung/07_Vererbung.iml" filepath="$PROJECT_DIR$/07_Vererbung/07_Vererbung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_ArrayList/08_ArrayList.iml" filepath="$PROJECT_DIR$/08_ArrayList/08_ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_DateiHandling/09_DateiHandling.iml" filepath="$PROJECT_DIR$/09_DateiHandling/09_DateiHandling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_Interfaces/10_Interfaces.iml" filepath="$PROJECT_DIR$/10_Interfaces/10_Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11_HashMap/11_HashMap.iml" filepath="$PROJECT_DIR$/11_HashMap/11_HashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A01_Klassen/A01_Klassen.iml" filepath="$PROJECT_DIR$/A01_Klassen/A01_Klassen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A01_Klassen_d/A01_Klassen_d.iml" filepath="$PROJECT_DIR$/A01_Klassen_d/A01_Klassen_d.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A02_Counter_v/A02_Counter_v.iml" filepath="$PROJECT_DIR$/A02_Counter_v/A02_Counter_v.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A03_Rechner_v/A03_Rechner_v.iml" filepath="$PROJECT_DIR$/A03_Rechner_v/A03_Rechner_v.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A04_KonsolEingaben_Schleifen_v/A04_KonsolEingaben_Schleifen_v.iml" filepath="$PROJECT_DIR$/A04_KonsolEingaben_Schleifen_v/A04_KonsolEingaben_Schleifen_v.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A04_Methoden1_v/A04_Methoden1_v.iml" filepath="$PROJECT_DIR$/A04_Methoden1_v/A04_Methoden1_v.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A05_FileFilter_v/A05_FileFilter_v.iml" filepath="$PROJECT_DIR$/A05_FileFilter_v/A05_FileFilter_v.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A06_Telefonbuch/A06_Telefonbuch.iml" filepath="$PROJECT_DIR$/A06_Telefonbuch/A06_Telefonbuch.iml" />
+    </modules>
+  </component>
+</project>
