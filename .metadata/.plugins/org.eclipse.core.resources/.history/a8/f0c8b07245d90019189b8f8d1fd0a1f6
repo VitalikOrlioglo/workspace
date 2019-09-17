@@ -1,0 +1,11 @@
+package app;
+import java.util.HashMap;
+
+public class HashMapExample {
+
+	public static void main(String[] args) {
+		HashMap<String, String> farben = new HashMap<>();
+		farben.put("rot", "#ff0000");
+	}
+
+}

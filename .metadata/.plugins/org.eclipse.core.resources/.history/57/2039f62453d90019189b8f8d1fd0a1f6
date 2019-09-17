@@ -1,0 +1,42 @@
+package app;
+/*
+ * mit Hilfe von HashMap implementieren
+ *  - Klasse Main zum testen:
+ *  eintrage machen, alle anzeigen, loschen, andern, suchen
+ */
+
+import java.util.HashMap;
+
+public class TelefonbuchImpl implements Telefonbuch{
+
+	HashMap<String, String> buch = new HashMap<>();
+	
+	@Override
+	public boolean eintrag(String name, String nummer) {
+		buch.put(name, nummer);
+		if (!buch.containsKey(nummer)) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public String findeNummer(String name) {
+		return null;
+	}
+
+	@Override
+	public boolean eintrageLoschen(String name) {
+		return false;
+	}
+
+	@Override
+	public void alleEintrageAnzeigen() {
+		
+	}
+
+	@Override
+	public boolean eintragAndern(String name, String nummer) {
+		return false;
+	}
+}

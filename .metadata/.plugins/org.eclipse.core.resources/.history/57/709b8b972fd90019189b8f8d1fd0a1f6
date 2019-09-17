@@ -1,0 +1,11 @@
+package app;
+
+public class Rennbahn {
+	
+	// gegen Interface programmieren
+	// Program to an Interface
+	public void fahreAlles(Fahrzeug f) {
+		
+	}
+
+}

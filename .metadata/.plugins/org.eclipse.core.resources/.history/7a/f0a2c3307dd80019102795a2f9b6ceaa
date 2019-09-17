@@ -1,0 +1,12 @@
+package app;
+
+import java.util.Scanner;
+
+public class DateiLesen {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner("out.txt");
+		System.out.println(sc);
+	}
+
+}

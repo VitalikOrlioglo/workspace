@@ -1,0 +1,39 @@
+package app;
+
+public class Rechner {
+	
+	/**
+	 * FIXME
+	 * @param a - eine Zahl
+	 * @param b - eine Zahl
+	 * @param operator - einer gultiger Operator (+, -, *, /)
+	 * @return Ergebnis der Berechnung
+	 * Was pasiert wenn durch 0 geteilt wird?
+	 * -> wie konnen wir darauf reagieren?
+	 * 
+	 * Welche Parameter kann man noch prufen? Wie? Wo?
+	 */
+	public static double rechner(double a, double b, char operator) {
+		double result = Double.NaN;
+		
+		switch (op) {
+		case '+':
+			return (a+b);
+			break;
+		case '-':
+			return (a-b);
+			break;
+		case '*':
+			return (a*b);
+			break;
+		case '/':
+			if (a/b == 0) {
+				return result;
+			}else {
+				System.out.println();
+			}
+		default:
+			System.out.println("Default");;
+		}
+	}
+}

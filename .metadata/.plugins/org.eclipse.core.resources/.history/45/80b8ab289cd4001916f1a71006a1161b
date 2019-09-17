@@ -1,0 +1,11 @@
+package app;
+
+public class Test {
+	String name;
+	private static int counter;
+	public Test(String name) {
+		this.name = name;
+		counter++;
+	}
+	
+}

@@ -1,0 +1,11 @@
+package app;
+/*
+ * mit Hilfe von HashMap implementieren
+ *  - Klasse Main zum testen:
+ *  eitrage machen, alle anzeigen, loschen, andern
+ */
+
+
+
+public class TelefonbuchImpl implements Telefonbuch{
+}

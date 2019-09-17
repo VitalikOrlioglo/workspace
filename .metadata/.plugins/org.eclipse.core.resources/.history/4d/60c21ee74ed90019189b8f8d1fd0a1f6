@@ -1,0 +1,36 @@
+package app;
+/*
+ * mit Hilfe von HashMap implementieren
+ *  - Klasse Main zum testen:
+ *  eintrage machen, alle anzeigen, loschen, andern
+ */
+
+
+
+public class TelefonbuchImpl implements Telefonbuch{
+
+	@Override
+	public boolean eintrag(String name, String nummer) {
+		return false;
+	}
+
+	@Override
+	public String findeNummer(String name) {
+		return null;
+	}
+
+	@Override
+	public boolean eintrageLoschen(String name) {
+		return false;
+	}
+
+	@Override
+	public void alleEintrageAnzeigen() {
+		
+	}
+
+	@Override
+	public boolean eintragAndern(String name, String nummer) {
+		return false;
+	}
+}

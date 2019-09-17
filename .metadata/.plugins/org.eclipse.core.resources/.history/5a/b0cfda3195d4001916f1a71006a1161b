@@ -1,0 +1,16 @@
+package app;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String s = StaticExample.klassenvariable;
+		
+		StaticExample.klassenMethode();
+		
+		StaticExample se = new StaticExample();
+		se.instanzMethode();
+		
+		se.klassenMethode();
+	}
+
+}

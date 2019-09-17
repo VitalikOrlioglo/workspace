@@ -1,0 +1,18 @@
+package app;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int num1 = 5;
+		int num2 = 2;
+		char op = 'ß';
+		double res = Rechner.rechner(num1, num2, op);
+		
+		if (Double.isNaN(res)) {
+			System.out.println("Fehler");
+		}else {
+			System.out.println("Ergebnis: " + num1 + op + num2 + " = " + res);
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+package app;
+/*
+ * - aus Datei in Datenstruktur einlesen z.B. ArrayList
+ * - Sortiert mit Standardmethode
+ * - Mehrfache Eintrage sollen entfernt werden
+ * - neue Datei top10000deNeu.txt schreiben
+ * 
+ * Ergebnis: Date mit 10 000 sortierten Zeilen
+ */
+
+
+public class FileFilter {
+
+	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
+		
+		
+		System.out.println(System.currentTimeMillis() - start);
+	}
+
+}

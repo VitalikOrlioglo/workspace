@@ -1,0 +1,12 @@
+package app;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Test test1 = new Test("Alex");
+		Test test2 = new Test("Katia");
+		int Objektanzahl = test1.getCounter()+test2.getCounter();
+		System.out.println("Objektanzahl: " + Objektanzahl);
+	}
+
+}

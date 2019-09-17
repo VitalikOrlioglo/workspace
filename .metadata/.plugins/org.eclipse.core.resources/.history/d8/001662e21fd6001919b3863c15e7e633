@@ -1,0 +1,79 @@
+package app;
+
+import java.util.Scanner;
+
+public class Rechner {
+	
+	public void input() {
+		Scanner scanner = new Scanner(System.in);
+		char weiter = 'y';
+		while (weiter == 'y') {
+			System.out.print("zahl1: ");
+			double zahl1 = scanner.nextDouble();
+			
+			System.out.print("zahl2: ");
+			double zahl2 = scanner.nextDouble();
+			
+			System.out.print("Operator: ");
+			char operator = scanner.next().charAt(0);
+			
+			double result = Rechner.rechner(zahl1, zahl2, operator);
+			System.out.println("Ergebnis: " + result);
+			System.out.println("Weiter? (y/n)");
+			weiter = scanner.next().charAt(0);
+		}
+		scanner.close();
+	}
+
+	public static double rechner(double a, double b, char operator) {
+		double result = Double.NaN;
+		
+		switch (operator) {
+		case '+':
+			result = a+b;
+			break;
+		case '-':
+			result = a-b;
+			break;
+		case '*':
+			result = a*b;
+			break;
+		case '/':
+			if (b == 0) {
+				return Double.NEGATIVE_INFINITY;
+			}else {
+				result = a/b;
+			}
+			break;
+		default:
+			System.out.println("Kein gultig Operator");
+		}
+		return result;
+	}
+	
+//	public static boolean isValidOperator(char operator) {
+//		boolean result = false;
+//		switch (operator) {
+//		case '+':
+//		case '-':
+//		case '*':
+//		case '/':
+//			result = true;
+//			break;
+//		default:
+//			result = false;
+//			break;
+//		}
+//		return result;
+//	}
+	
+	public static boolean isValidOperator(char operator) {
+//		if (operator == '+'|| operator == '-' || operator == '*'|| operator == '/') {
+//			return true;
+//		}
+//		return false;
+		return operator == '+'|| operator == '-' || operator == '*'|| operator == '/';
+	}
+	
+	
+}

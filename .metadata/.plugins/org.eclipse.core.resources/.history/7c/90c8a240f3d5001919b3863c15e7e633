@@ -1,0 +1,21 @@
+package app;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int num1 = 5;
+		int num2 = 0;
+		char op = '/';
+		double res = Rechner.rechner(num1, num2, op);
+		
+		
+		if (Double.isNaN(res)) {
+			System.out.println("Fehler");
+		}else if(Double.isInfinite(res)){
+			System.out.println("nicht durch 0 teilen");
+		}else {
+			System.out.println("Ergebnis: " + num1 + op + num2 + " = " + res);
+		}
+	}
+
+}

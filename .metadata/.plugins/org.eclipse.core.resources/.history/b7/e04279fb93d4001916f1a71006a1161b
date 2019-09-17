@@ -1,0 +1,11 @@
+package app;
+
+public class StaticExample {
+//	Klassenvariable
+	public static String klassenvariable = "hallo";
+	
+//	Klassenmethode
+	public static void klassenMethode() {}
+	public static void instanzMethode() {}
+
+}
