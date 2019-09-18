@@ -1,7 +1,0 @@
-package app;
-
-public class Uber {
-	public void m(int a) {}
-	public int m(double b) {}
-
-}

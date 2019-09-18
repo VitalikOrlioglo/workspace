@@ -41,7 +41,8 @@ public class TelefonbuchImpl implements Telefonbuch{
 	@Override
 	public boolean eintragAndern(String name, String nummer) {
 		if (buch.containsKey(name)) {
-			buch.put(name, nummer);
+			eintrag(name, nummer);
+			System.out.println("eintrag geandert");
 			return true;
 		}
 		return false;
