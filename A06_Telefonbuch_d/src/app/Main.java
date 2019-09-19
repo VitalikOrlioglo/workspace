@@ -13,7 +13,7 @@ public class Main {
 			tel.alleEintrageAnzeigen();
 		} catch (IllegalArgumentException e) {
 //			e.printStackTrace();
-			System.out.println("Nummer leer oder null");
+			System.out.println("Nummer leer oder null"+e.getMessage());
 		} catch (Exception e) {
 			System.out.println("Allgemeiner Fehler . . . ");
 		}

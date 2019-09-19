@@ -1,5 +1,8 @@
 package application;
 
+import com.sun.javafx.image.impl.ByteIndexed.Getter;
+
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -8,6 +11,11 @@ import model.Telefonbuch;
 import model.TelefonbuchImpl;
 
 public class SampleController {
+	
+	// Instanz variablen
+	private TelefonbuchImpl tel;
+
+	// fx
     @FXML
     private TextField nameEntryField;
 
@@ -21,19 +29,35 @@ public class SampleController {
     private Label labelSuche;
 
     @FXML
-    private Label labelEintrag;
-	
-	private Telefonbuch tel = new TelefonbuchImpl();
-	
-	
-    @FXML
-    void action(ActionEvent event) {
-    	labelEintrag.setText(tel.setText(nameEntryField, nummerEntryField));
+    private Label infoLabel;
+    
+    
+    
+    
+    public SampleController() {
+	}
+
+	@FXML
+    void initialize() {
+    	System.out.println("init . . .");
+    	tel = new TelefonbuchImpl();
+    	
+    	tel.eintrag("Max", "111");
+    	tel.eintrag("Andrew", "222");
+    	tel.eintrag("Otto", "333");
+    	infoLabel.setText(tel.getMap()+"");
     }
 
-	
-//	@FXML
-//	void initialize() {
-//		System.out.println("init . . .");
-//	} 
+    @FXML
+    void entryAction(ActionEvent event) {
+//    	Button b= (Button) event.getSource();
+    	tel.eintrag(nameEntryField.getText(), nummerEntryField.getText());
+    	infoLabel.setText(tel.getMap()+"");
+    }
+
+    @FXML
+    void searchAction(ActionEvent event) {
+    	labelSuche.setText(tel.findeNummer(nameSucheField.getText()));
+    }
+
 }
