@@ -27,7 +27,6 @@
 <fullyQualifiedTypeName name="javax.xml.parsers.FactoryConfigurationError"/>
 <fullyQualifiedTypeName name="app.Fahrzeug"/>
 <fullyQualifiedTypeName name="HashMapExample"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="app.Telefonbuch"/>
 <fullyQualifiedTypeName name="app.TelefonbuchImpl"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
@@ -44,7 +43,12 @@
 <fullyQualifiedTypeName name="com.sun.javafx.image.impl.ByteIndexed.Getter"/>
 <fullyQualifiedTypeName name="javax.script.ScriptEngineManager"/>
 <fullyQualifiedTypeName name="javax.script.ScriptEngine"/>
-<fullyQualifiedTypeName name="rechner.Rechner"/>
 <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
 <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Alert"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Alert.AlertType"/>
+<fullyQualifiedTypeName name="rechner.Rechner"/>
+<fullyQualifiedTypeName name="exception.BadExpressionException"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>
