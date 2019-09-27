@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="273.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="435.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="designpatternCol" prefWidth="178.0" text="Designpattern" />
+          <TableColumn fx:id="beschreibungCol" prefWidth="169.0" text="Beschreibung">
+          <cellValueFactory>
+          <PropertyValueFactory property="Beschreibung" /> 
+          </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

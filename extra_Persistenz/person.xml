@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person>
+    <adresse>
+        <ort>Berlin</ort>
+        <beispielorte>Berlin</beispielorte>
+        <beispielorte>Hamburg</beispielorte>
+        <beispielorte>Dresden</beispielorte>
+    </adresse>
+    <name>Max Meier</name>
+</person>
