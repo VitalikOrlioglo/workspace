@@ -1,10 +1,10 @@
 package app;
 
-public class ListManager {
-    private ListDAO dao;
+public class PersonnelManager {
+    private PersonnelDAO dao;
     
-    public ListManager() {
-        dao = ListDAOFactory.getContactDAO();
+    public PersonnelManager() {
+        dao = PersonnelDAOFactory.getContactDAO();
     }
     
     public Long addContact(Contact contact) {
@@ -23,7 +23,7 @@ public class ListManager {
         return dao.getContact(contactId);
     }
     
-    public List<Contact> findContacts() {
+    public Personnel<Contact> findContacts() {
         return dao.findContacts();
     }
 }
