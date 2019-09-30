@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="217.0" prefWidth="308.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <top>
+      <MenuBar prefHeight="35.0" prefWidth="308.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Switch">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showView2" text="View1" />
+              <MenuItem mnemonicParsing="false" onAction="#showView3" text="View2" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Clear">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#delete" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Pane fx:id="content" prefHeight="201.0" prefWidth="308.0">
+         <children>
+            <Text fill="#ebebeb" layoutX="55.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MainView">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

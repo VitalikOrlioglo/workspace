@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="241.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Window2Controller">
+   <children>
+      <TextField fx:id="textField" layoutX="69.0" layoutY="60.0" promptText="write and send..." />
+      <Button layoutX="251.0" layoutY="60.0" mnemonicParsing="false" onAction="#sendAction" text="Send" />
+   </children>
+</AnchorPane>

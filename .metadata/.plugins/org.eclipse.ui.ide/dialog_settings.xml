@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\java1\workspace\JavaFX Calculator"/>
+		<item value="C:\java1\workspace\JavaFX-3D-master"/>
 		<item value="C:\java1\workspace\A06_Telefonbuch_d1"/>
 		<item value="C:\java1\workspace\Adresse"/>
 		<item value="C:\java1\workspace\A01_Klassen_d"/>
@@ -10,6 +12,8 @@
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\java1\workspace\A07_fx_Telefonbuch_d"/>
+			<item value="C:\java1\workspace\fx_extra_SwitchPane"/>
 			<item value="C:\java1\workspace"/>
 			<item value="C:\java1\workspace\A08_fx_Rechner_corn"/>
 			<item value="C:\java1\workspace\A06_Telefonbuch_d1"/>
@@ -24,5 +28,7 @@
 		<item key="DIALOG_WIDTH" value="500"/>
 		<item key="DIALOG_HEIGHT" value="402"/>
 		<item key="TOGGLE_SELECTED" value="false"/>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

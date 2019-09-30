@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="217.0" prefWidth="308.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.View3Controller">
+   <center>
+      <Text fill="#723636" layoutX="93.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View 2">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+   </center>
+   <right>
+      <Button mnemonicParsing="false" onAction="#action" text="Button" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Label fx:id="label" prefHeight="31.0" prefWidth="72.0" textFill="#b96363" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </bottom>
+</BorderPane>

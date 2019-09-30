@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane prefHeight="187.0" prefWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1"  fx:controller="application.MainController">
+   <top>
+      <Label text="Welcome" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <Label fx:id="welcomeLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="59.0" prefWidth="226.0" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>
