@@ -35,39 +35,40 @@ public class PersonController {
     @FXML
     private DatePicker datePicker;
 
-//    ObservableList<Person> list = FXCollections.observableArrayList();
+    ObservableList<Person> list = FXCollections.observableArrayList();
     
-//    @FXML
-//    void save(ActionEvent event) {
-//    	System.out.println("init");
-//    	
-//    	list.add(new Person(vorname.getText(), nachname.getText(), datePicker.getValue()));
-//    	vorname.setText("");
-//    	nachname.setText("");
-//    	datePicker.setValue(null);
-//    }
-//    
-//    @FXML
-//    void initialize() {
-////    	tableView.setItems(list);
-//    	vornameCol.setCellValueFactory(new PropertyValueFactory<>("vorname"));// getPatternName()
-//    	nachnameCol.setCellValueFactory(new PropertyValueFactory<>("nachname"));// getBeschreibung()
-//    	geburtsdatumCol.setCellValueFactory(new PropertyValueFactory<>("geburtsdatum"));
-//    }
-    
-    
-    // tableView hat seine ObservableList, aber muss man noch PropertyValue in fxml schreiben
     @FXML
     void save(ActionEvent event) {
-    	tableView.getItems().add(new Person(vorname.getText(), nachname.getText(), datePicker.getValue()));
+    	System.out.println("init");
+    	
+    	list.add(new Person(vorname.getText(), nachname.getText(), datePicker.getValue()));
+    	vorname.setText("");
+    	nachname.setText("");
+    	datePicker.setValue(null);
     }
     
-    
-    /**
-     * 
-     */
     @FXML
     void initialize() {
     	tableView.getItems().add(new Person("Max", "Mewier", LocalDate.of(2000, Month.DECEMBER, 2)));
+    	tableView.setItems(list);
+    	vornameCol.setCellValueFactory(new PropertyValueFactory<>("vorname"));// getPatternName()
+    	nachnameCol.setCellValueFactory(new PropertyValueFactory<>("nachname"));// getBeschreibung()
+    	geburtsdatumCol.setCellValueFactory(new PropertyValueFactory<>("geburtsdatum"));
     }
+    
+    
+    // tableView hat seine ObservableList, aber muss man noch PropertyValue in fxml schreiben
+//    @FXML
+//    void save(ActionEvent event) {
+//    	tableView.getItems().add(new Person(vorname.getText(), nachname.getText(), datePicker.getValue()));
+//    }
+//    
+//    
+//    /**
+//     * 
+//     */
+//    @FXML
+//    void initialize() {
+//    	tableView.getItems().add(new Person("Max", "Mewier", LocalDate.of(2000, Month.DECEMBER, 2)));
+//    }
 }
