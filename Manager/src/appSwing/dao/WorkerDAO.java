@@ -1,7 +1,7 @@
-package dao;
+package appSwing.dao;
 
 import java.util.List;
-import entity.Worker;
+import appSwing.entity.Worker;
 
 /**
  * - Interaktion der WorkerManager mit DataBanken uber ein Interface

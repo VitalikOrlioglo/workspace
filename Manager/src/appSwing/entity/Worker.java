@@ -1,4 +1,4 @@
-package entity;
+package appSwing.entity;
 
 import java.time.LocalDate;
 
@@ -18,9 +18,17 @@ public class Worker {
     private String position;
     private boolean married;
     public Worker() {}
-    
+
+	public Worker(Long workerId, String firstName, String lastName, String phone, String email) {
+		this.workerId = workerId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.phone = phone;
+		this.email = email;
+	}
+
 	public Worker(String firstName, String lastName, String phone, String email, LocalDate dateOfBirth, String position,
-			boolean married) {
+				  boolean married) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;

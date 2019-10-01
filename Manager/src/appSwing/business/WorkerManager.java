@@ -1,10 +1,10 @@
-package business;
+package appSwing.business;
 
 import java.util.List;
 
-import dao.WorkerDAO;
-import dao.WorkerDAOFactory;
-import entity.Worker;
+import appSwing.dao.WorkerDAO;
+import appSwing.dao.WorkerDAOFactory;
+import appSwing.entity.Worker;
 
 public class WorkerManager {
     private WorkerDAO dao;

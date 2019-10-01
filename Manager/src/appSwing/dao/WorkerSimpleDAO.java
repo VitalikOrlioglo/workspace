@@ -1,12 +1,14 @@
-package dao;
+package appSwing.dao;
 
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import entity.Worker;
+import appSwing.entity.Worker;
 
 /**
- * - Modellierung von Speicher
+ * - Modellierung/Realisierung von Speicher(WorkerDAO)
  * Student
  * @author vitali orlioglo
  * 01.10.2019
@@ -16,6 +18,10 @@ import entity.Worker;
 
 public class WorkerSimpleDAO implements WorkerDAO {
 	private final List<Worker> workers = new ArrayList<Worker>();
+
+	public WorkerSimpleDAO() {
+		addWorker(new Worker("Андрей", "Соколов", "+7-911-890-7766", "sokolov@yandex.ru", LocalDate.of(2000, Month.DECEMBER, 2), 'M',"Developer", true));
+	}
 
 	@Override
 	public Long addWorker(Worker worker) {
