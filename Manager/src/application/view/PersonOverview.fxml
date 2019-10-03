@@ -45,25 +45,25 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label fx:id="firstNameLabel" prefHeight="72.0" prefWidth="229.0" text="First Name" />
+                        <Label prefHeight="72.0" prefWidth="229.0" text="First Name" />
                         <Label fx:id="firstNameLabel" prefHeight="72.0" prefWidth="229.0" text="Label" GridPane.columnIndex="1" />
-                        <Label fx:id="lastNameLabel" prefHeight="72.0" prefWidth="229.0" text="Last Name" GridPane.rowIndex="1" />
-                        <Label fx:id="streetLabel" prefHeight="72.0" prefWidth="229.0" text="Street" GridPane.rowIndex="2" />
+                        <Label prefHeight="72.0" prefWidth="229.0" text="Last Name" GridPane.rowIndex="1" />
+                        <Label prefHeight="72.0" prefWidth="229.0" text="Street" GridPane.rowIndex="2" />
                         <Label fx:id="lastNameLabel" prefHeight="72.0" prefWidth="229.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <Label fx:id="streetLabel" prefHeight="72.0" prefWidth="229.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="cityLabel" prefHeight="72.0" prefWidth="229.0" text="City" GridPane.rowIndex="3" />
+                        <Label prefHeight="72.0" prefWidth="229.0" text="City" GridPane.rowIndex="3" />
                         <Label fx:id="cityLabel" prefHeight="72.0" prefWidth="229.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label fx:id="postalCodeLabel" prefHeight="72.0" prefWidth="229.0" text="Postal Code" GridPane.rowIndex="4" />
+                        <Label prefHeight="72.0" prefWidth="229.0" text="Postal Code" GridPane.rowIndex="4" />
                         <Label fx:id="birthdayLabel" prefHeight="72.0" prefWidth="229.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                        <Label fx:id="birthdayLabel" prefHeight="72.0" prefWidth="229.0" text="Birthday" GridPane.rowIndex="5" />
+                        <Label prefHeight="72.0" prefWidth="229.0" text="Birthday" GridPane.rowIndex="5" />
                         <Label fx:id="postalCodeLabel" prefHeight="72.0" prefWidth="229.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                      </children>
                   </GridPane>
                   <ButtonBar layoutX="147.0" layoutY="244.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
                     <buttons>
-                      <Button mnemonicParsing="false" text="New" />
-                        <Button mnemonicParsing="false" text="Edit" />
-                        <Button mnemonicParsing="false" text="Delete" />
+                      <Button mnemonicParsing="false" onAction="#newButton" text="New" />
+                        <Button mnemonicParsing="false" onAction="#editButton" text="Edit" />
+                        <Button mnemonicParsing="false" onAction="#deleteButton" text="Delete" />
                     </buttons>
                   </ButtonBar>
                </children>

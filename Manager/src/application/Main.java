@@ -3,11 +3,14 @@ package application;
 import java.io.IOException;
 
 import application.model.Person;
+import application.view.PersonEditController;
 import application.view.PersonOverviewController;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -24,8 +27,8 @@ public class Main extends Application {
     private ObservableList<Person> personData = FXCollections.observableArrayList();
     public Main() {
     	// В качестве образца добавляем некоторые данные
-    	personData.add(new Person("Koziol", "Kozlov"));
-    	personData.add(new Person("Baran", "Baranovici"));
+//    	personData.add(new Person("Koziol", "Kozlov"));
+//    	personData.add(new Person("Baran", "Baranovici"));
 	}
     
     public ObservableList<Person> getPersonData() {
@@ -80,6 +83,44 @@ public class Main extends Application {
 			controller.setMain(this);
 		} catch (IOException e) {
 			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * - Открывает диалоговое окно для изменения деталей указанного адресата
+	 * - Если пользователь кликнул OK, то изменения сохраняются в предоставленном
+	 *  объекте адресата и возвращается значение true.
+	 * @param person - объект адресата, который надо изменить
+	 * @return true, если пользователь кликнул OK, в противном случае false.
+	 */
+	public boolean showPersonEdit(Person person) {
+		try {
+			// Загружаем fxml-файл и создаём новую сцену
+			// для всплывающего диалогового окна
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Main.class.getResource("view/PersonEdit.fxml"));
+			AnchorPane anchorPane = (AnchorPane) loader.load();
+
+			// Создаём диалоговое окно Stage
+			Stage editStage = new Stage();
+			editStage.setTitle("Edit Person");
+			editStage.initModality(Modality.WINDOW_MODAL);
+			editStage.initOwner(primaryStage);
+			Scene scene = new Scene(anchorPane);
+			editStage.setScene(scene);
+
+			// Передаём адресата в контроллер
+			PersonEditController personEditController = loader.getController();
+			personEditController.setEditStage(editStage);
+			personEditController.setPerson(person);
+
+			// Отображаем диалоговое окно и ждём, пока пользователь его не закроет
+			editStage.showAndWait();
+
+			return personEditController.isOkClicked();
+		} catch (IOException e) {
+			e.printStackTrace();
+			return false;
 		}
 	}
 	
