@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fd09679-29de-47a8-b7e0-465aba3344dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/PersonOverview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/view/PersonOverview.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/PersonOverviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/view/PersonOverviewController.java" afterDir="false" />
-    </list>
+    <list default="true" id="3fd09679-29de-47a8-b7e0-465aba3344dd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +13,7 @@
     <favorites_list name="Manager" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -182,7 +178,7 @@
   <component name="ToolWindowManager">
     <frame x="-1" y="24" width="1368" height="745" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.66064984" visible="true" weight="0.28776434" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.66064984" visible="true" weight="0.29229608" />
       <window_info id="Structure" order="1" sideWeight="0.3393502" side_tool="true" weight="0.13595167" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -296,12 +292,7 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/view/PersonEditDialog.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20" />
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/view/PersonEditDialog.fxml" />
     <entry file="file://$PROJECT_DIR$/src/application/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
